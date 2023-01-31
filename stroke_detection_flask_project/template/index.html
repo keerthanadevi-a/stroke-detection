@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../static/style.css">
+
+    <title>Stroke detection</title>
+</head>
+<body>
+
+<div class="form">
+    <a class="title">STROKE DETECTOR</a>
+       
+    
+        <form action = "{{url_for('predict')}}"  method="post" >
+            <div class = "input-container ic1">
+            <input type="number" name="gender" placeholder=" " >
+            <div class="cut"></div>
+            <label for="gender" class="placeholder">Gender (Female/Male/Other) :</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="age" placeholder=" " >
+            <div class="cut"></div>
+            <label for="age" class="placeholder">Age :</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="hypertension" placeholder=" " >
+            <div class="cut"></div>
+            <label for="hypertension" class="placeholder">Hypertension (No/Yes) :</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="heart_disease" placeholder=" " >
+            <div class="cut"></div>
+            <label for="heart_disease" class="placeholder">Heart disease (No/Yes) :</label>
+            </div>
+            
+            
+            <div class = "input-container ic2">
+            <input type="number" name="ever_married" placeholder=" " >
+            <div class="cut"></div>
+            <label for="ever_married" class="placeholder">Ever married (No/Yes) :</label>
+            </div>
+                
+            <div class = "input-container ic2">
+            <input type="number" name="work_type" placeholder=" " >
+            <div class="cut"></div>
+            <label for="work_type" class="placeholder">Work type (Govt job/Never worked/Private/Self-employed/Children) :</label>
+            </div>
+                    
+            <div class = "input-container ic2">
+            <input type="number" name="residence_type" placeholder=" " >
+            <div class="cut"></div>
+            <label for="residence_type" class="placeholder">Residence type (Rural/Urban) :</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" step="0.01" name="avg_glucose_level" placeholder=" " >
+            <div class="cut"></div>
+            <label for="avg_glucose_level" class="placeholder">Average glucose level :</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" step="0.01" name="bmi" placeholder=" " >
+            <div class="cut"></div>
+            <label for="bmi" class="placeholder">BMI :</label>
+            </div>
+
+            <div class = "input-container ic2">
+            <input type="number" name="smoking_status" placeholder=" " >
+            <div class="cut"></div>
+            <label for="smoking_status" class="placeholder">Smoking status (-,Formerly smoked, Never smoked, Smokes) :</label>
+            </div>
+
+            <!--Submit Button-->
+            <button type="text" class="submit" >SUBMIT</button>
+        </form>
+  
+
+        
+    </div>
+    
+
+
+</body>
+</html>
