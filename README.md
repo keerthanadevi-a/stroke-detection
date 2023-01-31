@@ -9,3 +9,5 @@
 -> The best model is found to be Random forest classifier with parameters : criterion = 'entropy', n_estimators = 150, random_state = 0
    
    Accuracy : 93 %
+
+-> A web application using flask is developed to get details from user through a form and detect stroke.
